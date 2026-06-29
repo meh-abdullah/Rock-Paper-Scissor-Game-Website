@@ -1,0 +1,364 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: none;
+}
+.tab{
+    border: 3px solid rgba(211, 108, 125, 0.24); 
+    background-color: rgba(244, 241, 248, 0.795);
+    display: flex; 
+    justify-content: space-evenly; 
+    border-bottom-right-radius: 210px ;
+    border-bottom-left-radius: 210px ;
+}
+#navb{
+    height: 60px;
+    width: 100%;
+  background: none;
+    font-weight: bolder;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+
+body{
+   
+    background-repeat: none;
+    background-size: cover;
+}
+#home0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 1305px;
+    
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    height: 57px;
+
+}
+
+#btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+.rock{
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("/rock.png.jpeg");
+    background-size: cover;
+    background-repeat: none;
+    margin-right: 5px;
+}
+
+
+.rock:hover{
+    animation: floatEffect 2s ease-in-out infinite; /* Apply animation on hover */
+    box-shadow: 0 20px 20px rgba(184, 12, 127, 0.397); /* Adds box shadow */
+}
+
+.paper {
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("/paper.png.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+/* Hover effect with animation */
+.paper:hover {
+    animation: floatEffect 2s ease-in-out infinite; /* Apply animation on hover */
+    box-shadow: 0 20px 20px rgba(71, 33, 133, 0.795); /* Adds box shadow */
+}
+
+/* Keyframes for floating animation */
+@keyframes floatEffect {
+    0% {
+        transform: translateY(0); /* Start from normal position */
+    }
+    50% {
+        transform: translateY(-15px); /* Move upwards a little */
+    }
+    100% {
+        transform: translateY(0); /* Float upwards a little more */
+    }
+}
+
+.scissor{
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("/scissor.png.jpeg");
+    background-size: cover;
+    background-repeat: none;
+
+}
+.scissor:hover{
+    animation: floatEffect 2s ease-in-out infinite; /* Apply animation on hover */
+      box-shadow: 0 20px 20px rgba(21, 129, 192, 0.795); /* Adds box shadow */}
+#counter{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.user-count{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 90px;
+
+}
+
+.comp-count{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 90px;
+
+}
+
+#last-box{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10px;
+
+}
+
+#usr{
+    margin-right: 20%;
+}
+
+.you{
+    height: 28px;
+    width: 100px;  
+    background-color:rgb(135, 135, 179);
+        border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+
+
+}
+
+.computer{
+    height: 28px;
+    width: 100px;
+    background-color:rgb(135, 135, 179);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#last-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(158, 161, 163);
+    height: 60px;
+    width: 800px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+/*  ---------------------------------  */
+
+#searchform{
+    width: 450px;
+    margin-left: 900px;
+}
+
+.about_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+   
+}
+.about_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
+    margin-top: 20px;
+
+}
+
+#name1{
+    background: none;
+    border-radius: 20px;
+    width: 465px;
+    height: 50px;
+    border: 3px solid rgba(0, 0, 0, 0.493);
+}
+#email1{
+    background: none;
+    border-radius: 20px;
+    width: 465px;
+    height: 50px;
+    border: 3px solid rgba(0, 0, 0, 0.493);}
+#message1{
+    background: none;
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.493);}
+
+#submit{
+    margin-top: 20px;
+    margin-left: 70px;
+    height: 55px;
+    width: 350px;
+    border-radius: 25px;
+    background: none;
+    border: 3px solid rgba(0, 0, 0, 0.493);
+    font-size: 23px;
+
+}
+#submit:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#abdullah{
+border-radius: 5%;
+    height: 600px;
+    width: 90%;
+}
+
+#abdullah:hover{
+    animation: floatEffect1 3s ease-in-out infinite; /* Apply animation on hover */
+}
+/* Keyframes for floating animation */
+@keyframes floatEffect1 {
+    0% {
+        transform: translateY(0); /* Start from normal position */
+    }
+    50% {
+        transform: translateY(-5px); /* Move upwards a little */
+    }
+    100% {
+        transform: translateY(0); /* Float upwards a little more */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars to prevent overlapping with video */
+    position: relative; /* Ensure footer is positioned properly */
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place video behind other content */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+   
+}
